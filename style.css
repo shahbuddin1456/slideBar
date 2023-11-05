@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    perspective: 500px;
+    overflow: hidden;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    height: 60px;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s;
+    background-color: #f8f8f8;
+}
+
+i {
+    cursor: pointer;
+}
+
+#headings {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#headings h1{
+    font-size: 40px;
+}
+
+#headings p{
+    font-size: 15px;
+    /* margin-top: 15px; */
+}
+
+#elements {
+    width: 100%;
+    margin-top: 120px;
+    justify-content: space-between;
+    padding: 0 200px;
+    display: flex;
+}
+
+#elements .element {
+    width: 17%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.element .pic{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    background-size: cover;
+    /* opacity: 0;
+    transition: ease-in-out 1s; */
+}
+
+#elements .element:nth-child(1) .pic{
+    background-image: url("https://images.pexels.com/photos/6273274/pexels-photo-6273274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#elements .element:nth-child(2) .pic{
+    background-image: url("https://images.pexels.com/photos/5438289/pexels-photo-5438289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#elements .element:nth-child(3) .pic{
+    background-image: url("https://images.pexels.com/photos/7003188/pexels-photo-7003188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+#elements .element:nth-child(4) .pic{
+    background-image: url("https://images.pexels.com/photos/6765585/pexels-photo-6765585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+/* .element .pic:hover{
+    opacity: 1;
+} */
+
+.element .content{
+    padding: 15px 10px;
+}
+
+.element .content h3{
+    color:#505050;
+    margin-top: 10px;
+}
+
+.element .content span i{
+    margin-left: 10px;
+}
+
+#sidenav{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transition: all ease-in-out .5s;
+    transform: translate(0,-50%);
+    width: 200px;
+    height: 80%;
+}
+
+#sidenav i {
+    color: #777;
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+#sidenav h3{
+    margin-bottom: 50px;
+}
+
+#sidenav a{
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #777;
+}
+
+#sidenav a:hover{
+    color: black;
+}
